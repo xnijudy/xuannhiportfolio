@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+*{scroll-behavior: smooth}
+body
+{
+background-color: black;
+color: #BEBEBE;
+	font-size: 16px;
+	font-family:"Nunito", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+h1,h2
+{
+	 font-family: "Yrsa", serif;
+}
+.font-dacbiet
+{
+	font-family: "Mea Culpa", cursive;
+  	font-weight: 800;
+  	font-style: normal;
+	color: rgba(197,0,141,1.00);
+}
+
+
+h1{
+    font-size: 36px
+}
+
+@media(min-width: 600px)
+{
+	h1{font-size: 48px; line-height: 2.7rem}
+}
+
+h2 {
+    font-size: 35px; line-height: 0.8rem
+}
+h3{
+    font-size: 2.5vh
+}
+h4{
+    font-size: 2vw
+}
+h5{
+    font-size: 1.5vw
+}
+h6{
+    font-size: 1vw
+}
+
+/* cho nay bat dau dinh dang mau chu cho web*/
+.text-primary
+{
+	color: #C10002
+}
+
+
+.text-light
+{
+	color: #FFFFFF
+}
+.text-dark
+{
+	color: rgba(0,0,0,0.8)
+}
+/*--- dinh dang mau nen background cho web-----*/
+.bg-primary
+{
+	background-color:#A00002
+}
+
+.bg-primary-nen
+{
+	background-color: rgba(0,0,0,1.00)
+}
+.btn-primary
+{
+	background-color:#A00002;
+	padding: 5px 20px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: all 1s
+}
+.btn-primary:hover
+{
+	background-color: rgba(160,0,2,1.00) ;
+	box-shadow: 0 5px 20px rgba(160,0,2,0.6) ;
+
+}
+
+/*--------------dinh dang vung section-----------------------------*/
+
+*{ box-sizing: border-box} /* giữ đường vien vao trong*/
+.container
+{/* box container sẽ chiếm 90% độ rộng màn hình và nằm giữa*/
+	width: 90%; margin: auto 
+}
+/*--- dinh dang trong flex---*/
+.d-flex{ display: flex}
+/*--- dẩy các box trong flex theo chiều ngang*/
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content:flex-end}
+.justify-content-center{justify-content:center}
+.justify-content-between{justify-content:space-between}
+.justify-content-around{justify-content:space-around}
+ /*--- đẩy các cột trong flex theo chiều dọc*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}    
+
+/*danh cho dien thoai*/
+@media (min-width:600px)
+{
+		.container
+	{
+		width: 80%; margin: auto 
+	}
+}
+
+.col-1 { width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+/* phải cho các cột vào dòng row, thì mới dược sắp nằm cạnh nhau cho đủ 100%*/
+.row{ display: flex; flex-wrap: wrap}
+/*tất cả các cột đều có đường viền đỏ và đẩy bờ lề vào trong là 15px*/
+[class*="col-"] {
+  padding: 15px;
+ /* border: 1px solid red;*//*--------------nhớ xóa trước khi nộp bài*/
+}
+.img-100{ width: 100%; height: auto}
+.text-center{ text-align: center}
+/*danh cho ipad*/
+@media (min-width:600px)
+{
+	.col-md-1 { width: 8.33%; }
+	.col-md-2{width: 16.66%}
+	.col-md-3{ width: 25%}
+	.col-md-4{ width: 33.33%}
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8{ width: 66.66%}
+	.col-md-9{ width: 75%}
+	.col-md-10{ width: 83.33%}
+	.col-md-11{ width: 91.66%}
+	.col-md-12{ width: 100%}
+}
+/*danh cho pc*/
+@media (min-width:960px)
+{
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2{width: 16.66%}
+	.col-lg-3{ width: 25%}
+	.col-lg-4{ width: 33.33%}
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8{ width: 66.66%}
+	.col-lg-9{ width: 75%}
+	.col-lg-10{ width: 83.33%}
+	.col-lg-11{ width: 91.66%}
+	.col-lg-12{ width: 100%}
+}
+.text-center{
+    text-align:center;
+}
+.font-dacbiet,h1,h2,h3,h4,h5,h6 {
+   font-family: 'Airstrike Expanded';  
+}
+
+@font-face {
+    font-family: 'SVN-Ready';
+    src: url('SVN-Ready.eot');
+    src: url('SVN-Ready.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Ready.woff2') format('woff2'),
+        url('SVN-Ready.woff') format('woff'),
+        url('SVN-Ready.ttf') format('truetype'),
+        url('SVN-Ready.svg#SVN-Ready') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SVN-Riesling';
+    src: url('SVN-Riesling.eot');
+    src: url('SVN-Riesling.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Riesling.woff2') format('woff2'),
+        url('SVN-Riesling.woff') format('woff'),
+        url('SVN-Riesling.ttf') format('truetype'),
+        url('SVN-Riesling.svg#SVN-Riesling') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airstrike Expanded';
+    src: url('AirstrikeExpanded.eot');
+    src: url('AirstrikeExpanded.eot?#iefix') format('embedded-opentype'),
+        url('AirstrikeExpanded.woff2') format('woff2'),
+        url('AirstrikeExpanded.woff') format('woff'),
+        url('AirstrikeExpanded.ttf') format('truetype'),
+        url('AirstrikeExpanded.svg#AirstrikeExpanded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.mx-auto{ margin-left: auto; margin-right: auto}
+.mt-40{ margin-top: 40px}
+.mt-30{ margin-top: 30px}
+.py-40{padding-top:40px; padding-bottom: 40px }
+.p-100{ padding: 100px}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+.mt-5{ margin-top: 5px}
+.mt-0{ margin-top: 0px}
+/*-----style cho menu responsive*/
+section{padding-top: 100px; padding-bottom: 50px}
+header
+{
+	position: fixed;
+	width: 100%;
+	left: 0; top: 0;
+	z-index: 99999999999999999999;/*để thanh menu luôn nằm trên section welcomw, about,...*/
+}
+header nav
+{
+background: black;
+padding: 10px 0;
+box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+margin-bottom: 10px;
+position: relative
+}
+nav .container{position: relative}
+nav .btn-toggle
+{
+	position: absolute;
+	right: 0; top:0;
+	font-size: 18px;
+	color: #ddd;
+	cursor: pointer;
+	border: 2px solid #000000;
+	background: black;
+}
+nav .brand
+{
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: bolder; 
+}
+
+nav .menu ul
+{
+	list-style: none; /*--bỏ chấm đầu dòng trong unorerlist*/
+	margin: 0;
+	padding: 0;
+}
+nav .menu ul li
+{
+	position: relative;
+}
+nav .menu ul li a
+{
+	text-decoration: none;
+	padding: 7px;
+	border-bottom: 1px solid black;
+	display: block;
+	color: #fff;
+}
+nav .menu ul li a:hover
+{
+	background-color: #1A1A1A;
+}
+
+.menu
+{display: none}
+@media( min-width : 900px)
+{
+    .menu{display: block !important}
+    nav .btn-toggle { display: none}
+    nav .container, nav .menu ul   
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		
+    }
+}
+nav .menu ul li a
+{
+    border-bottom: none;
+    padding: 7px 25px}
+
+.progress-bar
+{
+	background-color: #ddd;
+	border-radius: 10px;/*--bo góc*/
+	height: 15px;
+	margin-top: -16px;
+}
+
+.progress
+{
+	height: 100%;/*--mặc định 100%*/
+	border-radius: 10px; 
+	font-size: 12px; 
+	color: #ddd;
+	text-align: right;
+	font-weight: 600;
+	padding-right: 5px;
+	
+}
+
+.icon-thanhbar{
+	font-size: 25px;
+	font-weight: bold
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    width: 50%;
+    border-top: 1px solid gray;
+}
+
+#welcome{
+	background-image: url( "../images/2.jpg");
+	background-repeat: no-repeat;
+	background-position: center top
+}
+
+#bg-about{
+	background-image: url( "../images/3.jpg");
+	background-repeat: no-repeat;
+	background-position: center top
+}
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
